@@ -1,5 +1,6 @@
 export class Product {
   constructor(
+    public id: number,
     public sku: string,
     public name: string,
     public description: string,
@@ -12,6 +13,7 @@ export class Product {
   ) {}
 }
 export interface Product {
+  id: number;
   sku: string;
   name: string;
   description: string;
