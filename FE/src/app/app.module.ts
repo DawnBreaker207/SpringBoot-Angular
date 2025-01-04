@@ -10,6 +10,7 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { SearchComponent } from './components/search/search.component';
 import { ProductService } from './services/product.service';
+import { CartStatusComponent } from './components/cart-status/cart-status.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ProductService } from './services/product.service';
     ProductCategoryMenuComponent,
     SearchComponent,
     ProductDetailsComponent,
+    CartStatusComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgbModule],
   providers: [ProductService],
