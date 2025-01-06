@@ -21,6 +21,9 @@ export class LoginComponent implements OnInit {
         issuer: myAppConfig.oidc.issuer,
         scopes: myAppConfig.oidc.scopes,
       },
+      features: {
+        registration: true,
+      },
     });
   }
   ngOnInit(): void {
