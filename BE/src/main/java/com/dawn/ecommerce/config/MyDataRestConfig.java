@@ -14,7 +14,6 @@ import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.http.HttpMethod;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.util.pattern.PathPattern;
 
 import com.dawn.ecommerce.entity.Country;
 import com.dawn.ecommerce.entity.Order;
