@@ -88,6 +88,14 @@
                   "with": "src/environments/environment.development.ts"
                 }
               ]
+            },
+            "qa": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.qa.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -100,6 +108,9 @@
             },
             "development": {
               "buildTarget": "FE:build:development"
+            },
+            "qa": {
+              "buildTarget": "FE:build:qa"
             }
           },
           "defaultConfiguration": "development"
