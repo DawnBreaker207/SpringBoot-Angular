@@ -41,12 +41,12 @@ const oktaAuth = new OktaAuth(oktaConfig);
     OrderHistoryComponent,
   ],
   imports: [
+    OktaAuthModule,
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
     NgbModule,
-    ReactiveFormsModule,
-    OktaAuthModule,
   ],
   providers: [
     ProductService,
