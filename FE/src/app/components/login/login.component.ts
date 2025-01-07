@@ -27,19 +27,18 @@ export class LoginComponent implements OnInit, OnDestroy {
     });
   }
   ngOnInit(): void {
-    this.oktaSignin.renderEl(
-      {
+    this.oktaSignin
+      .renderEl({
         el: '#okta-sign-in-widget',
-      },
-      (res: any) => {
+      })
+      .then((res: any) => {
         if (res.status === 'SUCCESS') {
           this.oktaAuth.signInWithRedirect();
         }
-      },
-      (err: any) => {
+      })
+      .catch((err: any) => {
         throw err;
-      }
-    );
+      });
   }
   ngOnDestroy(): void {
     this.oktaSignin.remove();
