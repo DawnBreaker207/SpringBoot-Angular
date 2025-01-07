@@ -11,7 +11,6 @@ import OktaAuth from '@okta/okta-auth-js';
 
 function sendToLoginPage(oktaAuth: OktaAuth, injector: Injector) {
   const router = injector.get(Router);
-
   router.navigate(['/login']);
 }
 

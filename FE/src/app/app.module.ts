@@ -22,7 +22,6 @@ import myAppConfig from './config/my-app-config';
 import { ProductService } from './services/product.service';
 
 const oktaConfig = myAppConfig.oidc;
-
 const oktaAuth = new OktaAuth(oktaConfig);
 @NgModule({
   declarations: [
