@@ -25,8 +25,11 @@ public class SecurityConfiguration {
 	// Add content negotiation strategy
 	http.setSharedObject(ContentNegotiationStrategy.class, new HeaderContentNegotiationStrategy());
 
-//	Force a non-empty response body for 401 to make the response more friendly
+	// Force a non-empty response body for 401 to make the response more friendly
 	Okta.configureResourceServer401ResponseBody(http);
+
+	// Disable CSRF since we are not using Cookies for session tracking
+	http.csrf().disable();
 	return http.build();
     }
 }
