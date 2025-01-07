@@ -20,6 +20,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { SearchComponent } from './components/search/search.component';
 import myAppConfig from './config/my-app-config';
 import { ProductService } from './services/product.service';
+import { OrderHistoryComponent } from './components/order-history/order-history.component';
 
 const oktaConfig = myAppConfig.oidc;
 const oktaAuth = new OktaAuth(oktaConfig);
@@ -36,6 +37,7 @@ const oktaAuth = new OktaAuth(oktaConfig);
     LoginComponent,
     LoginStatusComponent,
     MembersPageComponent,
+    OrderHistoryComponent,
   ],
   imports: [
     BrowserModule,
